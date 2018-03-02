@@ -9,11 +9,21 @@
 	<artifactId>gs-java-mail-protocol</artifactId>
 	<description>using smpt/pop3 to send/receive mail</description>
 
+	<properties>
+		<slf4j-version>1.7.25</slf4j-version>
+	</properties>
 	<dependencies>
+		<!-- <dependency> <groupId>com.sun.mail</groupId> <artifactId>javax.mail</artifactId> 
+			<version>1.6.1</version> </dependency> -->
 		<dependency>
-			<groupId>com.sun.mail</groupId>
-			<artifactId>javax.mail</artifactId>
-			<version>1.6.1</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j-version}</version>
 		</dependency>
 	</dependencies>
 	<build>
