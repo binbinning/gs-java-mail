@@ -133,9 +133,9 @@ public class POP3ReceiveMailTest {
 			System.out.println("邮件大小：" + msg.getSize() * 1024 + "kb");
 			boolean isContainerAttachment = isContainAttachment(msg);
 			System.out.println("是否包含附件：" + isContainerAttachment);
-			if (isContainerAttachment) {
-				saveAttachment(msg, "c:\\mailtmp\\" + msg.getSubject() + "_"); // 保存附件
-			}
+//			if (isContainerAttachment) {
+//				saveAttachment(msg, "c:\\mailtmp\\" + msg.getSubject() + "_"); // 保存附件
+//			}
 			StringBuffer content = new StringBuffer(30);
 			getMailTextContent(msg, content);
 			System.out.println("邮件正文：" + (content.length() > 100 ? content.substring(0, 100) + "..." : content));
