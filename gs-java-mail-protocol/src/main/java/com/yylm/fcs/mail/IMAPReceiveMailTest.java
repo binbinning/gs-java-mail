@@ -1,10 +1,8 @@
 package com.yylm.fcs.mail;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Properties;
 
 import javax.mail.Flags.Flag;
@@ -100,7 +98,7 @@ public class IMAPReceiveMailTest {
 		for (Message message : messages) {
 			IMAPMessage msg = (IMAPMessage) message;
 			String subject = MimeUtility.decodeText(msg.getSubject());
-			// System.out.println("[" + subject + "]未读，是否需要阅读此邮件（yes/no）？");
+			System.out.println("[" + subject + "]未读，是否需要阅读此邮件（yes/no）？");
 			// BufferedReader reader = new BufferedReader(new
 			// InputStreamReader(System.in));
 			// String answer = reader.readLine();
