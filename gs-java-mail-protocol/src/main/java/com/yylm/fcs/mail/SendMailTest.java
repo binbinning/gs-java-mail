@@ -28,9 +28,12 @@ import javax.mail.internet.MimeUtility;
 
 /**
  * 使用SMTP协议发送电子邮件
+ * 
+ * @see http://blog.csdn.net/xyang81/article/details/7675152
  */
 public class SendMailTest {
-//	private static final Logger LOG = LoggerFactory.getLogger(SendMailTest.class);
+	// private static final Logger LOG =
+	// LoggerFactory.getLogger(SendMailTest.class);
 
 	// 邮件发送协议
 	private final static String PROTOCOL = "smtp";
